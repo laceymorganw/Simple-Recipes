@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simply Recipes</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="drop">
+                <a href="#recipe" class="dropdown-button">Recipes</a>
+                <div class="submenu">
+                    <a href="#pasta">Pasta</a>
+                    <a href="#chicken">Chicken</a>
+                    <a href="#pork">Pork</a>
+                    <a href="#biscuits">Biscuits</a>
+                    <a href="#fish">Fish</a>
+                    <a href="#dessert">Dessert</a>
+                </div>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!--HEADER-->
+    <header>
+        <h1>Simply Recipes</h1>
+    </header>
+
+    <section>
+        <div class="container">
+            <!--FEATURE RECIPE-->
+            <h2>Featured Recipe</h2>
+            <div id="featured-image" class="column">
+                <div class="image-container">
+                    <img src="images/skillet-pizza.jpeg">
+                </div>
+            </div>
+            <div class="column">
+                <h3 id="featured-header">Deep Dish Skillet Pizza</h3>
+                <h4>Prep Time</h4>
+                <p>30-40 minutes</p>
+                <h4>Level</h4>
+                <p>medium</p>
+                <div>
+                    <p id="featured-main-text">Deep dish pizza has got a lot going for it:
+                        a thick crust that's tender and chewy on the inside,
+                        but nicely crisped on the outside; a little extra room for piling
+                        on the toppings; and, deep dish is less needy than its thin crust
+                        style counterpart, which requires some care when rolling and stretching.
+                        Here, you just push the dough into the skillet and you're cooking.
+                        Save the leftovers for lunch!</p>
+                </div>
+            </div>
+        </div>
+        <div id="recipe" class="container">
+            <h2>Recipes</h2>
+            <!--START-->
+            <div id="pasta" class="column">
+                <div class="image-container">
+                    <div class="flip">
+                        <!--FRONT-->
+                        <div class="flip-front">
+                            <img src="images/tortelloni.jpeg">
+                        </div>
+                        <!--BACK-->
+                        <div class="flip-back">
+                            <h3>Saucy Tortelloni Parm</h3>
+                            <h4>Prep Time</h4>
+                            <p>20-30 minutes</p>
+                            <h4>Level</h4>
+                            <p>easy</p>
+                            <input type="button" value="Make Recipe">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END-->
+            <!--START-->
+            <div id="chicken" class="column">
+                <div class="image-container">
+                    <div class="flip">
+                        <!--FRONT-->
+                        <div class="flip-front">
+                            <img src="images/chicken-thighs.jpeg">
+                        </div>
+                        <!--BACK-->
+                        <div class="flip-back">
+                            <h3>Mediterranean Chicken Thighs</h3>
+                            <h4>Prep Time</h4>
+                            <p>20-30 minutes</p>
+                            <h4>Level</h4>
+                            <p>easy</p>
+                            <input type="button" value="Make Recipe">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END-->
+            <!--START-->
+            <div id="pork" class="column">
+                <div class="image-container">
+                    <div class="flip">
+                        <!--FRONT-->
+                        <div class="flip-front">
+                            <img src="images/pork-katsu.jpeg">
+                        </div>
+                        <!--BACK-->
+                        <div class="flip-back">
+                            <h3>Crispy Pork Katsu & Rice</h3>
+                            <h4>Prep Time</h4>
+                            <p>20-30 minutes</p>
+                            <h4>Level</h4>
+                            <p>medium</p>
+                            <input type="button" value="Make Recipe">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END-->
+            <!--START-->
+            <div id="biscuits" class="column">
+                <div class="image-container">
+                    <div class="flip">
+                        <!--FRONT-->
+                        <div class="flip-front">
+                            <img src="images/chedder-biscuits.jpeg">
+                        </div>
+                        <!--BACK-->
+                        <div class="flip-back">
+                            <h3>Cheddar Cheese Biscuits</h3>
+                            <h4>Prep Time</h4>
+                            <p>40-50 minutes</p>
+                            <h4>Level</h4>
+                            <p>medium</p>
+                            <input type="button" value="Make Recipe">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END-->
+            <!--START-->
+            <div id="fish" class="column">
+                <div class="image-container">
+                    <div class="flip">
+                        <!--FRONT-->
+                        <div class="flip-front">
+                            <img src="images/baked-cod.jpeg">
+                        </div>
+                        <!--BACK-->
+                        <div class="flip-back">
+                            <h3>Baked Cod & Scalloped Potatoes</h3>
+                            <h4>Prep Time</h4>
+                            <p>30-40 minutes</p>
+                            <h4>Level</h4>
+                            <p>easy</p>
+                            <input type="button" value="Make Recipe">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END-->
+            <!--START-->
+            <div id="dessert" class="column">
+                <div class="image-container">
+                    <div class="flip">
+                        <!--FRONT-->
+                        <div class="flip-front">
+                            <img src="images/smores.jpeg">
+                        </div>
+                        <!--BACK-->
+                        <div class="flip-back">
+                            <h3>S'mores Cake</h3>
+                            <h4>Prep Time</h4>
+                            <p>50-60 minutes</p>
+                            <h4>Level</h4>
+                            <p>medium</p>
+                            <input type="button" value="Make Recipe">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END-->
+        </div>
+    </section>
+    <!--FORM-->
+    <section>
+        <div id="contact" class="container">
+            <h2>Contact Us</h2>
+            <h3 id="contact-h3">Want more information about our recipes?<br>
+                Contact us below!
+            </h3>
+            <div>
+                <form>
+                    <input type="text" value="" placeholder="First Name">
+                    <input type="text" value="" placeholder="Last Name"><br>
+                    <input type="email" value="" placeholder="Email">
+                    <input type="tel" value="" placeholder="Phone Number"><br>
+                    <input type="checkbox" id="Newsletter">
+                    <label for="Newsletter">Subscribe for weekly recipes!
+                    </label><br>
+                    <textarea>Type message here...</textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <p>Simply Recipes &copy;</p>
+                </td>
+                <td>
+                    <p>310 SW 4th Ave Suite 200</p>
+                    <p>Portland, OR 97204</p>
+                </td>
+                <td>
+                    <p>503-234-3966</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
+</html>
