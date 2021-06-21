@@ -86,6 +86,7 @@ li.drop {
 
 #featured-header {
     font-family: "Sacramento", cursive;
+    font-size: 60px;
     color:rgb(0, 80, 67); 
 }
 
@@ -95,6 +96,13 @@ li.drop {
     padding-right: 40px;
     padding-left: 30px;
     text-align: justify;
+}
+
+#featured-image.column .image-container img{
+    width: 700px;
+    height: auto;
+    margin-left: -100px;
+    margin-top: -30px;
 }
 
 /*HEADERS*/
@@ -162,6 +170,7 @@ p {
 .column {
     float: left;
     width: 48%; /*this will perfectly center the images side by side*/
+    padding: 15px
 }
 
 .column img:nth-child(-n+7) {
@@ -185,7 +194,7 @@ p {
     margin-top: 100px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 80px;
+    margin-bottom: 180px;
 }
 
 .image {
@@ -248,6 +257,11 @@ div#dessert.column {
     transform: rotateY(-180deg);
     margin: auto;
     border: 2px solid white;
+}
+
+.text-container{
+    align-items: center;
+    padding-top: 70px;
 }
 
 /*IMAGE FLIP BUTTON*/
@@ -315,7 +329,9 @@ form input {
     padding: 3px;
     margin: 10px 15px 10px 0px;
     border-radius: 5px;
-    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 400;
     color: rgb(165, 165, 165);
     transition: color 0.3s ease-out;
 }
@@ -345,6 +361,7 @@ textarea {
     border: 3px solid rgb(165, 165, 165);
     border-radius: 5px;
     background-color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
     color: rgb(165, 165, 165);
     font-size: 15px;
     transition: color 0.3s ease-out;
