@@ -1,0 +1,82 @@
+/*Import link for the Josefin Slab font from fonts.google.com*/ 
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap");
+
+/*NAVBAR*/
+.nav-bar {
+    position: sticky; 
+    top: 0; 
+    z-index: 9; 
+}
+
+
+ul {
+    display: flex; /* Creates a flex-container which will expand or 
+    shrink elements to fill the space available to them and place the 
+    elements side by side horizontally */
+    list-style-type: none;/*Removes default styling for unordered list elements */
+    align-items: center;
+    margin: -8px -10px 0px -10px; 
+    overflow: hidden;/*Prevents the browser from displaying a right to left scroll 
+    bar as a result from the minus margin values*/
+    height: 70px;
+    background-color: rgb(1, 128, 106);
+    border-bottom: 5px solid rgb(247, 177, 188);
+}
+
+a {
+   display: block;/*Keeps the anchor elements within the rollover-menu div display vertically
+   instead of horizonatlly cancels out flex conatiner styling basically*/
+    font-family: "Josefin Slab", serif;/*add comment for this*/
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(247, 177, 188);
+    text-align: center;
+    width: 100px;
+    padding: 30px;
+    text-decoration: none;
+    transition: background-color 0.4s ease-in;
+}
+
+
+/*NAV BAR ROLLOVER*/
+
+/*add comment for this basically how this works*/
+a:hover/*,
+.drop:hover*/ /*drop:hover will keep the background color blue while 
+hovering mouse over links in the div within the list tag*/ {
+    background-color: rgb(149, 238, 223);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease-in;
+}
+
+
+.rollover-menu {
+    display: none;/*prevents anchor links in div tag from 
+    showing on the web browser until a hover effect is triggered*/ 
+    position: absolute;/*Absolute will position the div element 
+    relative to the parent list element position*/
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /*margin-top: 0.5px; add when the top pink border is added*/
+}
+
+.drop:hover .rollover-menu {
+    display: block;
+}
+
+/*
+.rollover-menu a {
+    color: rgb(0, 80, 67);
+}
+
+.rollover-menu a:hover {
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 16px 0px rgba(90, 90, 90, 0.2);
+    transition: 0.3s ease-in;
+}
+
+/*add comment for this*//*
+.rollover-menu a:nth-child(1){
+    border-top: 5px solid rgb(238, 118, 136);
+}*/
