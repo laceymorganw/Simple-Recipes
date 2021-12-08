@@ -8,13 +8,13 @@
 </head>
 
 <body>
-
+    <!--NAVBAR-->
     <nav class="nav-bar">
         <ul>
             <li><a href="#">Home</a></li>
-            <li class="drop">
-                <a href="#recipe" class="dropdown-button">Recipes</a>
-                <div class="submenu">
+            <li class="drop"><a href="#recipes">Recipes</a>
+                <div class="rollover-menu">
+                    <a href="#featured">Featured Recipe</a>
                     <a href="#pasta">Pasta</a>
                     <a href="#chicken">Chicken</a>
                     <a href="#pork">Pork</a>
@@ -30,39 +30,39 @@
     <header>
         <h1>Simple Recipes</h1>
     </header>
-
+    <!--RECIPES-->
     <section>
-        <div class="container">
-            <!--FEATURE RECIPE-->
+        <!--FEATURED RECIPE-->
+        <div class="container" id="featured">
             <h2>Featured Recipe</h2>
-            <div id="featured-image" class="column">
-                <div class="image-container">
+            <div class="column recipe-card-background">
+                <div class="recipe-container">
                     <img src="images/skillet-pizza.jpeg">
                 </div>
             </div>
             <div class="column">
                 <h3 id="featured-header">Deep Dish Skillet Pizza</h3>
                 <h4>Prep Time</h4>
-                <p>30-40 minutes</p>
-                <h4>Level</h4>
+                <p>30 - 40 minutes</p>
+                <h4>Level:</h4>
                 <p>medium</p>
-                <div>
-                    <p id="featured-main-text">Deep dish pizza has got a lot going for it:
-                        a thick crust that's tender and chewy on the inside,
-                        but nicely crisped on the outside; a little extra room for piling
-                        on the toppings; and, deep dish is less needy than its thin crust
-                        style counterpart, which requires some care when rolling and stretching.
-                        Here, you just push the dough into the skillet and you're cooking.
-                        Save the leftovers for lunch!</p>
-                </div>
+                <p id="featured-main-text">Deep dish pizza has got a lot going for it:
+                    a thick crust that's tender and chewy on the inside,
+                    but nicely crisped on the outside; a little extra room for piling
+                    on the toppings; and, deep dish is less needy than its thin crust
+                    style counterpart, which requires some care when rolling and stretching.
+                    Here, you just push the dough into the skillet and you're cooking.
+                    Save the leftovers for lunch!</p>
+                <input type="button" value="Recipe" id="featured-button">
             </div>
         </div>
-        <div id="recipe" class="container">
+        <!--RECIPE CARDS-->
+        <div class="container" id="recipes">
             <h2>Recipes</h2>
-            <!--START-->
-            <div id="pasta" class="column">
-                <div class="image-container">
-                    <h3>Saucy Tortelloni Parm</h3>
+            <!--PASTA-->
+            <div class="column" id="pasta">
+                <div class="recipe-container">
+                    <h3>Saucy Tortelloni Parm </h3>
                     <div class="flip">
                         <!--FRONT-->
                         <div class="flip-front">
@@ -71,9 +71,9 @@
                         <!--BACK-->
                         <div class="flip-back">
                             <div class="text-container">
-                                <h4>Prep Time</h4>
-                                <p>20-30 minutes</p>
-                                <h4>Level</h4>
+                                <h4>Prep Time:</h4>
+                                <p>20 - 30 minutes</p>
+                                <h4>Level:</h4>
                                 <p>easy</p>
                                 <input type="button" value="Recipe">
                             </div>
@@ -81,10 +81,9 @@
                     </div>
                 </div>
             </div>
-            <!--END-->
-            <!--START-->
-            <div id="chicken" class="column">
-                <div class="image-container">
+            <!--CHICKEN-->
+            <div class="column recipe-card-background" id="chicken">
+                <div class="recipe-container">
                     <h3>Mediterranean Chicken Thighs</h3>
                     <div class="flip">
                         <!--FRONT-->
@@ -94,20 +93,19 @@
                         <!--BACK-->
                         <div class="flip-back">
                             <div class="text-container">
-                            <h4>Prep Time</h4>
-                            <p>20-30 minutes</p>
-                            <h4>Level</h4>
-                            <p>easy</p>
-                            <input type="button" value="Recipe">
+                                <h4>Prep Time:</h4>
+                                <p>20 - 30 minutes</p>
+                                <h4>Level:</h4>
+                                <p>easy</p>
+                                <input type="button" value="Recipe">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--END-->
-            <!--START-->
-            <div id="pork" class="column">
-                <div class="image-container">
+            <!--PORK-->
+            <div class="column recipe-card-background" id="pork">
+                <div class="recipe-container">
                     <h3>Crispy Pork Katsu & Rice</h3>
                     <div class="flip">
                         <!--FRONT-->
@@ -117,43 +115,41 @@
                         <!--BACK-->
                         <div class="flip-back">
                             <div class="text-container">
-                            <h4>Prep Time</h4>
-                            <p>20-30 minutes</p>
-                            <h4>Level</h4>
-                            <p>medium</p>
-                            <input type="button" value="Recipe">
+                                <h4>Prep Time:</h4>
+                                <p>20 - 30 minutes</p>
+                                <h4>Level:</h4>
+                                <p>medium</p>
+                                <input type="button" value="Recipe">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--END-->
-            <!--START-->
-            <div id="biscuits" class="column">
-                <div class="image-container">
+            <!--BISCUITS-->
+            <div class="column" id="biscuits">
+                <div class="recipe-container">
                     <h3>Cheddar Cheese Biscuits</h3>
                     <div class="flip">
                         <!--FRONT-->
                         <div class="flip-front">
-                            <img src="images/chedder-biscuits.jpeg">
+                            <img src="images/cheddar-biscuits.jpeg">
                         </div>
                         <!--BACK-->
                         <div class="flip-back">
                             <div class="text-container">
-                            <h4>Prep Time</h4>
-                            <p>40-50 minutes</p>
-                            <h4>Level</h4>
-                            <p>medium</p>
-                            <input type="button" value="Recipe">
+                                <h4>Prep Time:</h4>
+                                <p>40 - 50 minutes</p>
+                                <h4>Level:</h4>
+                                <p>medium</p>
+                                <input type="button" value="Recipe">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--END-->
-            <!--START-->
-            <div id="fish" class="column">
-                <div class="image-container">
+            <!--FISH-->
+            <div class="column" id="fish">
+                <div class="recipe-container">
                     <h3>Baked Cod & Scalloped Potatoes</h3>
                     <div class="flip">
                         <!--FRONT-->
@@ -163,20 +159,19 @@
                         <!--BACK-->
                         <div class="flip-back">
                             <div class="text-container">
-                            <h4>Prep Time</h4>
-                            <p>30-40 minutes</p>
-                            <h4>Level</h4>
-                            <p>easy</p>
-                            <input type="button" value="Recipe">
+                                <h4>Prep Time:</h4>
+                                <p>30 - 40 minutes</p>
+                                <h4>Level:</h4>
+                                <p>easy</p>
+                                <input type="button" value="Recipe">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--END-->
-            <!--START-->
-            <div id="dessert" class="column">
-                <div class="image-container">
+            <!--DESSERT-->
+            <div class="column recipe-card-background" id="dessert">
+                <div class="recipe-container">
                     <h3>S'mores Cake</h3>
                     <div class="flip">
                         <!--FRONT-->
@@ -186,39 +181,33 @@
                         <!--BACK-->
                         <div class="flip-back">
                             <div class="text-container">
-                            <h4>Prep Time</h4>
-                            <p>50-60 minutes</p>
-                            <h4>Level</h4>
-                            <p>medium</p>
-                            <input type="button" value="Recipe">
+                                <h4>Prep Time:</h4>
+                                <p>50-60 minutes</p>
+                                <h4>Level:</h4>
+                                <p>medium</p>
+                                <input type="button" value="Recipe">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--END-->
         </div>
     </section>
-    <!--FORM-->
+    <!--CONTACT FORM-->
     <section>
-        <div id="contact" class="container">
+        <div class="container" id="contact">
             <h2>Contact Us</h2>
-            <h3 id="contact-h3">Want more information about our recipes?<br>
-                Contact us below!
-            </h3>
-            <div>
-                <form>
-                    <input type="text" value="" placeholder="First Name">
-                    <input type="text" value="" placeholder="Last Name"><br>
-                    <input type="email" value="" placeholder="Email">
-                    <input type="tel" value="" placeholder="Phone Number"><br>
-                    <input type="checkbox" id="Newsletter">
-                    <label for="Newsletter">Subscribe for weekly recipes!
-                    </label><br>
-                    <textarea>Type message here...</textarea><br>
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
+            <h3>Want more information about our recipes? <br> Contact us below!</h3>
+            <form>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name"><br>
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="Phone Number"><br>
+                <input type="checkbox" id="subscription">
+                <label for="subscription">Subscribe for weekly recipes!</label><br>
+                <textarea placeholder="Type message here..."></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </section>
     <!--FOOTER-->
