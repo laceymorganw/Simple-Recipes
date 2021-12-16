@@ -89,7 +89,7 @@ footer {
     leaving no white space*/
     background-color: rgb(1, 128, 106);
     border-top: 5px solid rgb(247, 177, 188);
-    bottom: 0; /*positions the footer at bottom of the screen*/
+    bottom: 0; /*Positions the footer at bottom of the screen*/
 }
 
 table {
@@ -167,9 +167,11 @@ p {
     padding: 10px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .column {
-        width: 90%;
+        width: 100%;
+        padding: 0px;
+        margin-left: -13px; /*Centers each column on the screen*/
     }
 }
 
@@ -190,28 +192,26 @@ div elements with the .column*/
 }
 
 /*Mobile size screens*/
-@media only screen and (max-width: 600px) {
-    #recipes.column {
+@media screen and (max-width: 600px) {
+    /*#recipes.column {
         height: 500px;
-    }
+    }*/
     .column img:nth-child(-n + 7) {
         width: 350px;
         height: 225px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     }
 
     .recipe-container {
         width: 350px;
         height: 225px;
     }
-
 }
 
 .recipe-card-background {
     background-color: rgb(149, 238, 223);
 }
 
-/*Atlernates the blue tile background*/
+/*Alternates the blue tile background on smaller screen sizes*/
 @media only screen and (max-width: 1200px) {
     #pork {
         background-color: rgb(255, 255, 255);
@@ -239,44 +239,40 @@ div elements with the .column*/
 
 /*Sets margin left to 0 because it is not needed on a 
 small screen and centers the text*/
-@media only screen and (max-width: 1200px) {
-    #featured-main-text{
+@media screen and (max-width: 1200px) {
+    #featured-main-text {
         margin-left: 0;
     }
 }
 
 /*Specifically styles the img tag nested within the div elements of #featured
 and .recipe-container in the Featured Recipe section*/
-#featured .column img {
-    width: 700px;
-    height: auto; /*Automatically calculates the image height based on the width input*/
-    margin-left: -100px;
-    margin-top: -20px; /*Margin left and top will override previous margin 
+@media screen and (min-width: 1500px) {
+    #featured .column img {
+        width: 700px;
+        height: auto; /*Automatically calculates the image height based on the width input*/
+        margin-left: -100px;
+        margin-top: -20px; /*Margin left and top will override previous margin 
     styling from the .recipe-container class selector*/
+    }
 }
 
-@media only screen and (max-width: 1500px) {
+/*Adjusts the position of the featured image to be centered on the screen when the width is 1499px or less*/
+@media screen and (max-width: 1499px) {
     #featured .column img {
-        width: 500px;
-        height: auto;
-        margin-top: 25px;
-        margin-left: 1px;
+        margin-left: 0px;
+        margin-top: 40px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    #featured .column img {
-        width: 350px;
-        height: auto;
-        margin-left: 2px;
-        margin-top: -70px;
-    }
     #featured .recipe-card-background {
         height: 300px;
     }
+    #featured .column img {
+        margin-top: -65px;
+    }
 }
-
-
 #featured-button {
     display: block; /*Positions the recipe button on its own line from the other elements within the div*/
     margin: 60px auto 0px;
@@ -326,7 +322,7 @@ Featured Recipe section*/
     background-color: rgb(149, 238, 223);
     border: 2px solid white;
     transform: rotateY(
-        -180deg
+        180deg
     ); /*Subtracts another 180 degrees from the 
     -180 degrees it moved to previously so the text can be read properly*/
 }
@@ -335,11 +331,14 @@ Featured Recipe section*/
     padding-top: 70px;
 }
 
-@media only screen and (max-width: 600px){
+
+@media only screen and (max-width: 600px) {
     .text-container {
         padding-top: 0px;
     }
 }
+
+
 
 /*RECIPE BUTTON*/
 input[type="button"] {
@@ -436,3 +435,5 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: rgb(247, 177, 188);
 }
+
+
