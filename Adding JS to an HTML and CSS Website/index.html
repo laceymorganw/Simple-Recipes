@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Recipes</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="drop"><a href="#recipes">Recipes</a>
+                <div class="rollover-menu">
+                    <a href="#featured">Featured Recipe</a>
+                    <a href="#pasta">Pasta</a>
+                    <a href="#chicken">Chicken</a>
+                    <a href="#pork">Pork</a>
+                    <a href="#biscuits">Biscuits</a>
+                    <a href="#fish">Fish</a>
+                    <a href="#dessert">Dessert</a>
+                </div>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!--HEADER-->
+    <header>
+        <h1>Simple Recipes</h1>
+    </header>
+    <!--RECIPES-->
+    <section>
+        <!--FEATURED RECIPE-->
+        <div class="container" id="featured">
+            <h2>Featured Recipe</h2>
+            <div class="column recipe-card-background">
+                <div class="recipe-container">
+                    <img src="images/skillet-pizza.jpeg">
+                </div>
+            </div>
+            <div class="column">
+                <h3 id="featured-header">Deep Dish Skillet Pizza</h3>
+                <h4>Prep Time</h4>
+                <p>30 - 40 minutes</p>
+                <h4>Level:</h4>
+                <p>medium</p>
+                <p id="featured-main-text">Deep dish pizza has got a lot going for it:
+                    a thick crust that's tender and chewy on the inside,
+                    but nicely crisped on the outside; a little extra room for piling
+                    on the toppings; and, deep dish is less needy than its thin crust
+                    style counterpart, which requires some care when rolling and stretching.
+                    Here, you just push the dough into the skillet and you're cooking.
+                    Save the leftovers for lunch!</p>
+                <!--UPDATE EACH INPUT with class modal-button and href-->
+                <input type="button" value="Recipe" id="featured-button" class="modal-button" href="#recipeModalOne">
+            </div>
+        </div>
+        <!--RECIPE CARDS-->
+        <div class="container" id="recipes">
+            <h2>Recipes</h2>
+            <!--PASTA-->
+            <div class="column" id="pasta">
+                <div class="recipe-container">
+                    <h3>Saucy Tortelloni Parm </h3>
+                    <div class="flip">
+                        <!--FRONT-->
+                        <div class="flip-front">
+                            <img src="images/tortelloni.jpeg">
+                        </div>
+                        <!--BACK-->
+                        <div class="flip-back">
+                            <div class="text-container">
+                                <h4>Prep Time:</h4>
+                                <p>20 - 30 minutes</p>
+                                <h4>Level:</h4>
+                                <p>easy</p>
+                                <!--UPDATE EACH INPUT with class modal-button and href-->
+                                <input type="button" value="Recipe" class="modal-button" href="#recipeModalTwo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--CHICKEN-->
+            <div class="column recipe-card-background" id="chicken">
+                <div class="recipe-container">
+                    <h3>Mediterranean Chicken Thighs</h3>
+                    <div class="flip">
+                        <!--FRONT-->
+                        <div class="flip-front">
+                            <img src="images/chicken-thighs.jpeg">
+                        </div>
+                        <!--BACK-->
+                        <div class="flip-back">
+                            <div class="text-container">
+                                <h4>Prep Time:</h4>
+                                <p>20 - 30 minutes</p>
+                                <h4>Level:</h4>
+                                <p>easy</p>
+                                <!--UPDATE EACH INPUT with class modal-button and href-->
+                                <input type="button" value="Recipe" class="modal-button" href="#recipeModalThree">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--PORK-->
+            <div class="column recipe-card-background" id="pork">
+                <div class="recipe-container">
+                    <h3>Crispy Pork Katsu & Rice</h3>
+                    <div class="flip">
+                        <!--FRONT-->
+                        <div class="flip-front">
+                            <img src="images/pork-katsu.jpeg">
+                        </div>
+                        <!--BACK-->
+                        <div class="flip-back">
+                            <div class="text-container">
+                                <h4>Prep Time:</h4>
+                                <p>20 - 30 minutes</p>
+                                <h4>Level:</h4>
+                                <p>medium</p>
+                                <!--UPDATE EACH INPUT with class modal-button and href-->
+                                <input type="button" value="Recipe" class="modal-button" href="#recipeModalFour">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--BISCUITS-->
+            <div class="column" id="biscuits">
+                <div class="recipe-container">
+                    <h3>Cheddar Cheese Biscuits</h3>
+                    <div class="flip">
+                        <!--FRONT-->
+                        <div class="flip-front">
+                            <img src="images/cheddar-biscuits.jpeg">
+                        </div>
+                        <!--BACK-->
+                        <div class="flip-back">
+                            <div class="text-container">
+                                <h4>Prep Time:</h4>
+                                <p>40 - 50 minutes</p>
+                                <h4>Level:</h4>
+                                <p>medium</p>
+                                <!--UPDATE EACH INPUT with class modal-button and href-->
+                                <input type="button" value="Recipe" class="modal-button" href="#recipeModalFive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--FISH-->
+            <div class="column" id="fish">
+                <div class="recipe-container">
+                    <h3>Baked Cod & Scalloped Potatoes</h3>
+                    <div class="flip">
+                        <!--FRONT-->
+                        <div class="flip-front">
+                            <img src="images/baked-cod.jpeg">
+                        </div>
+                        <!--BACK-->
+                        <div class="flip-back">
+                            <div class="text-container">
+                                <h4>Prep Time:</h4>
+                                <p>30 - 40 minutes</p>
+                                <h4>Level:</h4>
+                                <p>easy</p>
+                                <!--UPDATE EACH INPUT with class modal-button and href-->
+                                <input type="button" value="Recipe" class="modal-button" href="#recipeModalSix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--DESSERT-->
+            <div class="column recipe-card-background" id="dessert">
+                <div class="recipe-container">
+                    <h3>S'mores Cake</h3>
+                    <div class="flip">
+                        <!--FRONT-->
+                        <div class="flip-front">
+                            <img src="images/smores.jpeg">
+                        </div>
+                        <!--BACK-->
+                        <div class="flip-back">
+                            <div class="text-container">
+                                <h4>Prep Time:</h4>
+                                <p>50-60 minutes</p>
+                                <h4>Level:</h4>
+                                <p>medium</p>
+                                <!--UPDATE EACH INPUT with class modal-button and href-->
+                                <input type="button" value="Recipe" class="modal-button" href="#recipeModalSeven">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--RECIPE MODALS-->
+    <!-- RECIPE MODAL ONE -->
+    <div id="recipeModalOne" class="recipe-modal">
+
+        <!-- Modal content -->
+        <div class="recipe-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-header">
+                <h3>Deep Dish Skillet Pizza</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="rp-column-1">
+                        <h5>Cook Time</h5>
+                        <p>30-40 minutes</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h5>Servings</h5>
+                        <p>6</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h5>Level</h5>
+                        <p>medium</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="rp-column-1">
+                        <h5>Ingredients</h5>
+                        <ul class="recipe-list">
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </ul>
+                    </div>
+                    <!--I think a challenge that they could do after this is add a scroll bar in the directions
+                    area since the height of this will be too small on some screen sizes.-->
+                    <div class="rp-column-2">
+                        <h5>Directions</h5>
+                        <!--Can have the students grap this from the loremipsum.io-->
+                        <p class="recipe-directions">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RECIPE MODAL TWO -->
+    <div id="recipeModalTwo" class="recipe-modal">
+
+        <!-- Modal content -->
+        <div class="recipe-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-header">
+                <h3>Saucy Tortelloni Parm</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="rp-column-1">
+                        <h5>Cook Time</h5>
+                        <p>20-30 minutes</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h5>Servings</h5>
+                        <p>2</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h5>Level</h5>
+                        <p>easy</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="rp-column-1">
+                        <h5>Ingredients</h5>
+                        <ul class="recipe-list">
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </ul>
+                    </div>
+                    <!--I think a challenge that they could do after this is add a scroll bar in the directions
+                        area since the height of this will be too small on some screen sizes.-->
+                    <div class="rp-column-2">
+                        <h5>Directions</h5>
+                        <!--Can have the students grap this from the loremipsum.io-->
+                        <p class="recipe-directions">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RECIPE MODAL Three -->
+    <div id="recipeModalThree" class="recipe-modal">
+
+        <!-- Modal content -->
+        <div class="recipe-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-header">
+                <h3>Mediterranean Chicken Thighs</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="rp-column-1">
+                        <h5>Cook Time</h5>
+                        <p>20-30 minutes</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h5>Servings</h5>
+                        <p>4</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h5>Level</h5>
+                        <p>easy</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="rp-column-1">
+                        <h5>Ingredients</h5>
+                        <ul class="recipe-list">
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </ul>
+                    </div>
+                    <!--I think a challenge that they could do after this is add a scroll bar in the directions
+                        area since the height of this will be too small on some screen sizes.-->
+                    <div class="rp-column-2">
+                        <h5>Directions</h5>
+                        <!--Can have the students grap this from the loremipsum.io-->
+                        <p class="recipe-directions">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RECIPE MODAL Four -->
+    <div id="recipeModalFour" class="recipe-modal">
+
+        <!-- Modal content -->
+        <div class="recipe-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-header">
+                <h3>Crispy Pork Katsu & Rice</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="rp-column-1">
+                        <h5>Cook Time</h5>
+                        <p>20-30 minutes</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h5>Servings</h5>
+                        <p>4</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h5>Level</h5>
+                        <p>medium</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="rp-column-1">
+                        <h5>Ingredients</h5>
+                        <ul class="recipe-list">
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </ul>
+                    </div>
+                    <!--I think a challenge that they could do after this is add a scroll bar in the directions
+                        area since the height of this will be too small on some screen sizes.-->
+                    <div class="rp-column-2">
+                        <h5>Directions</h5>
+                        <!--Can have the students grap this from the loremipsum.io-->
+                        <p class="recipe-directions">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RECIPE MODAL FIVE -->
+    <div id="recipeModalFive" class="recipe-modal">
+
+        <!-- Modal content -->
+        <div class="recipe-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-header">
+                <h3>Cheddar Cheese Biscuits</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="rp-column-1">
+                        <h5>Cook Time</h5>
+                        <p>40-50 minutes</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h5>Servings</h5>
+                        <p>4</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h5>Level</h5>
+                        <p>medium</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="rp-column-1">
+                        <h5>Ingredients</h5>
+                        <ul class="recipe-list">
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </ul>
+                    </div>
+                    <!--I think a challenge that they could do after this is add a scroll bar in the directions
+                        area since the height of this will be too small on some screen sizes.-->
+                    <div class="rp-column-2">
+                        <h5>Directions</h5>
+                        <!--Can have the students grap this from the loremipsum.io-->
+                        <p class="recipe-directions">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RECIPE MODAL SIX -->
+    <div id="recipeModalSix" class="recipe-modal">
+
+        <!-- Modal content -->
+        <div class="recipe-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-header">
+                <h3>Baked Cod & Scalloped Potatoes</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="rp-column-1">
+                        <h5>Cook Time</h5>
+                        <p>30-40 minutes</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h5>Servings</h5>
+                        <p>4</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h5>Level</h5>
+                        <p>easy</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="rp-column-1">
+                        <h5>Ingredients</h5>
+                        <ul class="recipe-list">
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </ul>
+                    </div>
+                    <!--I think a challenge that they could do after this is add a scroll bar in the directions
+                        area since the height of this will be too small on some screen sizes.-->
+                    <div class="rp-column-2">
+                        <h5>Directions</h5>
+                        <!--Can have the students grap this from the loremipsum.io-->
+                        <p class="recipe-directions">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RECIPE MODAL SEVEN -->
+    <div id="recipeModalSeven" class="recipe-modal">
+
+        <!-- Modal content -->
+        <div class="recipe-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-header">
+                <h3>S'mores Cake</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="rp-column-1">
+                        <h5>Cook Time</h5>
+                        <p>50-60 minutes</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h5>Servings</h5>
+                        <p>4</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h5>Level</h5>
+                        <p>medium</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="rp-column-1">
+                        <h5>Ingredients</h5>
+                        <ul class="recipe-list">
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </ul>
+                    </div>
+                    <!--I think a challenge that they could do after this is add a scroll bar in the directions
+                        area since the height of this will be too small on some screen sizes.-->
+                    <div class="rp-column-2">
+                        <h5>Directions</h5>
+                        <!--Can have the students grap this from the loremipsum.io-->
+                        <p class="recipe-directions">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CONTACT FORM-->
+    <section>
+        <div class="container" id="contact">
+            <h2>Contact Us</h2>
+            <h3>Want more information about our recipes? <br> Contact us below!</h3>
+            <!--ADD id contactFormto Form-->
+            <form id="contactForm">
+                <!--Add IDs to each input below, firstName, lastName, email, subscription. 
+                add required-->
+                <input id="firstName" type="text" placeholder="First Name" required>
+                <input id="lastName" type="text" placeholder="Last Name" required><br>
+                <input id="email" type="email" placeholder="Email" required>
+                <input id="phone" type="tel" placeholder="Phone Number" required><br>
+                <input type="checkbox" id="subscription">
+                <label for="subscription">Subscribe for weekly recipes!</label><br>
+                <textarea id="message" placeholder="Type message here..." required></textarea><br>
+                <input type="submit" value="Submit"  class="form-modal-btn" href="#formModal">
+            </form>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <p>Simple Recipes &copy;</p>
+                </td>
+                <td>
+                    <p>310 SW 4th Ave Suite 200</p>
+                    <p>Portland, OR 97204</p>
+                </td>
+                <td>
+                    <p>503-206-6915</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <!--Will need to add the script tags in new video-->
+    <script src="javascript/javascript.js"></script>
+</body>
+
+</html>
