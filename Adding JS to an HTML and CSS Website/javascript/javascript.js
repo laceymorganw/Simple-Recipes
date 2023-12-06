@@ -10,10 +10,12 @@ var closeBtn = document.getElementsByClassName("close-btn");
 
 // When the user clicks the button, open the modal
 for (var i = 0; i < btn.length; i++) {
-    btn[i].onclick = function (e) {
-        e.preventDefault();
-        modal = document.querySelector(e.target.getAttribute("href"));
-        modal.style.display = "block";
+    btn[i].onclick = function () {
+        for (var index in modals) {
+            if (modals[index].style) {
+                modals[index].style.display = "block";
+            }
+        }
     }
 }
 
@@ -21,15 +23,17 @@ for (var i = 0; i < btn.length; i++) {
 for (var i = 0; i < closeBtn.length; i++) {
     closeBtn[i].onclick = function () {
         for (var index in modals) {
-            if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+            if (modals[index].style) {
+                modals[index].style.display = "none";
+            }
         }
     }
 }
 
-
 //EMAIL VALIDATION
 
 document.getElementById('contactForm').addEventListener('submit', function (event) {
+    //Prevents browser automatically reloaded once user presses submit
     event.preventDefault();
 
     // Validate email 
@@ -39,21 +43,28 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     //Email pattern checks for all symbols that would be need for an email address suchs as
     //the @ symbol and . and the text that would come before, between and after. 
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    if (!emailPattern.test(email)) {
-        alert('Please enter a valid email address');
-        return;
-    }
 
-    // Validate other required fields
+    //Use this variable to display messages if fields are filled out or thank you message
+    const valMsg = document.getElementById('validateMsg');
+
+    // Check other fields are filled out
     const firstName = document.getElementById('firstName').value;
     const lastName = document.getElementById('lastName').value;
     const phone = document.getElementById('phone').value;
     const message = document.getElementById('message').value;
 
-    if (!firstName || !lastName || !phone || !message) {
-        alert('Please fill in all required fields');
-        return;
+   if (!firstName || !lastName || !phone || !message) {
+        //Checks if fields have been filled out
+        valMsg.innerHTML = '<p style="color: red;">Please fill out all empty fields</p>';
+    } else if (!emailPattern.test(email)) {
+        //Checks if there is a valid email 
+        event.preventDefault();
+        valMsg.innerHTML = '<p style="color: red;">Please enter a valid email address</p>';
+    } else{
+        //If all fields are filled out correctly display thank you message
+        valMsg.innerHTML = '<p style="color: red;">Thank you for submitting!</p>';
     }
+
 
     // Here you can specify where the form data will be sent (e.g., an email address)
     const formData = {
@@ -65,8 +76,6 @@ document.getElementById('contactForm').addEventListener('submit', function (even
         subscribe: document.getElementById('subscription').checked
     };
 
-    alert('Thank you for submitting the form!');
-
     //Displays what that user wrote in the console
-    console.log(JSON.stringify(formData, null, 2))
+    console.log(JSON.stringify(formData2))
 });
