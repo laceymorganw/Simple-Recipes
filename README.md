@@ -8,4 +8,4 @@ This was built on a gradient the first section of files in the repo goes over HT
 
 The Adding JS to an HTML and CSS Website folder is the name of the tutorial video series that contains the updated code. The JavaScript takes all recipe buttons on the page and creates an array, then when an item is selected from the array the code then runs through which button was pressed and displays a pop-up model of the recipe ingredients and instructions. We then create a form validator and capture the form data and display it in the console. 
 
-[View Simple Recipes Project](laceymorganw.github.io/projects/ipTracker/index.html)
+[View Simple Recipes Project](https://laceymorganw.github.io/projects/Simple-Recipes/index.html)
